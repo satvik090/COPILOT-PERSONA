@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+chromadb
+sentence-transformers
+openai
+httpx
+tqdm
+prometheus-client
+asyncio
+python-dotenv
+pytest
+pytest-asyncio
+pathlib
+watchdog
+apscheduler
+# ast is part of Python's standard library and is intentionally not installed from PyPI.

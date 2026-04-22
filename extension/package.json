@@ -1,0 +1,42 @@
+{
+  "name": "copilot-persona",
+  "displayName": "CopilotPersona",
+  "description": "Injects personal coding patterns into GitHub Copilot suggestions",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copilotPersona.enable",
+        "title": "CopilotPersona: Enable"
+      },
+      {
+        "command": "copilotPersona.disable",
+        "title": "CopilotPersona: Disable"
+      },
+      {
+        "command": "copilotPersona.triggerIndex",
+        "title": "CopilotPersona: Re-index corpus"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "copilotPersona.serverUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "CopilotPersona server URL"
+        },
+        "copilotPersona.enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}

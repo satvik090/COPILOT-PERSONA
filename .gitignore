@@ -1,0 +1,15 @@
+﻿venv/
+__pycache__/
+*.pyc
+.env
+data/chroma/
+evaluation_raw.json
+evaluation_report.json
+evaluation_report.txt
+*.pt
+.DS_Store
+node_modules/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
